@@ -1,0 +1,42 @@
+.logotype{
+    font-size: clamp(30px,6vw,52px);
+    
+    color:var(--main-yellow);
+    text-shadow: rgb(0, 0, 0) 0px 1px 10px;
+    display: flex;
+    align-items: center;
+    gap:10px;
+    animation: slide 1.4s ease 1;
+    animation-delay: 50ms;
+    
+}
+.logotype::after{
+    content: '';
+    display: inline-block;
+    width: 45px;
+    height: 55px;
+    background-image: url(../../img/AGlogotype.avif);
+    background-size: cover;
+}
+
+@keyframes slide{
+    0%{
+        transform: translateX(-300px);
+        opacity: 0;
+    }
+    
+   
+}
+
+@media(max-width:370px){
+    .logotype::after{
+        display: none
+    }
+    
+}
+
+@media(max-width:670px){
+    .logotype{
+        justify-content: center;
+    }
+}

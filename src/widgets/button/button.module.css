@@ -1,0 +1,25 @@
+
+.button{
+    transition: 350ms;
+    --buttonColor:rgb(38, 38, 38);
+    border-radius: 10px;
+    color:var(--main-white);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px 10px 5px;
+    border: none;
+    background-color: var(--buttonColor);
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+
+    
+}
+
+.button:hover{
+    color:var(--main-yellow);
+    font-size: 17px;
+    padding: 10px 10px 10px 10px;
+
+}

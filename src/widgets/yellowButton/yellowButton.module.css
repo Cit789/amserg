@@ -1,0 +1,23 @@
+.YellowBtn{
+     transition: 350ms;
+    border-radius: 10px;
+    color:var(--main-black);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px 5px 10px 5px;
+    
+    border: none;
+    background-color: var(--main-yellow);
+    font-weight: 700;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.YellowBtn:hover{
+    font-size: 17px;
+    padding: 10px 10px 10px 10px;
+    
+    
+}
+
