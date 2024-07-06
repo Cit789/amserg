@@ -1,0 +1,91 @@
+.container{
+    transition: 300ms;
+    font-size: 20px;
+    font-weight: 700;
+    color:var(--main-white);
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    box-sizing: border-box;
+    gap:15px;
+    border-radius: 10px;
+    background-color: var(--main-gray);
+    
+    width:fit-content;
+    height: 66px;
+}
+
+.serverLogotype{
+    width: 36px;
+    height: 36px;
+    object-fit: cover;
+
+}
+.online{
+    display: inline-flex;
+    align-items: center;
+}
+
+
+.online::before{
+    content: '';
+    display: inline-block;
+    width:30px;
+    height: 30px;
+    background-image: url(../../svg/user.svg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-right: 5px;
+}
+.logotype{
+    display: flex;
+    align-items: center;
+}
+
+.logotype.Amserg::before{
+    
+    content: '';
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/AGlogotypeMicro.avif);
+    margin-right: 5px;
+}
+
+.logotype.Onyx::before{
+    content: '';
+    display: block;
+    width: 36px;
+    height: 36px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/OnyxLogotype.avif);
+    margin-right: 5px;
+}
+.logotype.AlexNotfril::before{
+    content: '';
+    display: block;
+    width: 36px;
+    height: 36px;
+    border-radius: 10px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url(../../img/AlexNotfrilLogotypeavif.avif);
+    margin-right: 5px;
+}
+
+.container:hover{
+    font-size: 21px;
+}
+
+.container:hover .logotype::before{
+    transition: 300ms;
+    width: 37px;
+    height: 37px;
+}

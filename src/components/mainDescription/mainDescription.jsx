@@ -8,6 +8,8 @@ import server from '../../svg/server.svg'
 import StatButton from '../../widgets/statButton/statButton'
 import user from '../../svg/user.svg'
 export default function MainDescription() {
+	const discord_url = 'https://discord.com/invite/amserg-games'
+	const youtube_url = 'https://www.youtube.com/@AmSerg'
 	return (
 		<div className={cl.mainContainer}>
 			<div className={cl.descriptionContainer}>
@@ -22,11 +24,17 @@ export default function MainDescription() {
 					</p>
 				</div>
 				<div className={cl.buttonsContainer}>
-					<BigButton text='ЛИЧНЫЙ КАБИНЕТ' src={cart}/>
-					<BigButton text='СЕРВЕРЫ' src={server}/>
-					<BigButton text='ДИСКОРД' src={discord}/>
-					<BigButton text='ЮТУБ' src={youtube}/>
-					<StatButton text='ОНЛАЙН: 160' src={user}/>
+					<BigButton text='ЛИЧНЫЙ КАБИНЕТ' src={cart} />
+					<a href='#hook'>
+						<BigButton text='СЕРВЕРЫ' src={server} />
+					</a>
+					<a href={discord_url} target='_blank'>
+						<BigButton text='ДИСКОРД' src={discord} />
+					</a>
+					<a href={youtube_url} target='_blank'>
+						<BigButton text='ЮТУБ' src={youtube} />
+					</a>
+					<StatButton text='ОНЛАЙН: 160' src={user} />
 				</div>
 			</div>
 		</div>

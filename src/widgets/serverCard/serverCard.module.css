@@ -1,0 +1,98 @@
+.serverCard{
+    cursor: pointer;
+    transition: 250ms;
+    height: 190px;
+    width: 350px;
+    border-radius: 10px;
+    display: flex;
+    position: relative;
+    align-items: center;
+    justify-content: center;
+    
+
+}
+
+.serverCard:hover{
+    box-shadow: rgba(242,242,242,0.1) 0px 0px 15px 0px;
+    padding: 0px 5px;
+}
+
+.serverCard.classic{
+    background-image: url(../../img/classic.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.serverCard.mediumrp{
+    background-image: url(../../img/mediumRP.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.serverCard.hardrp{
+    background-image: url(../../img/hardRP.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.serverCard.norules{
+    background-image: url(../../img/mainDescription.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.serverCard.events{
+    background-image: url(../../img/events.avif);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+
+.serverInfo{
+    position: absolute;
+    --gradientBlackColor: rgba(38,38,38,0);
+    width: 100%;
+    padding: 6px 10px;
+    background-image: linear-gradient(180deg,var(--gradientBlackColor) 0%,var(--main-black) 100%);
+    box-sizing: border-box;
+    display: flex;
+    justify-content: space-between;
+    bottom: 0;
+    color:var(--main-white);
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.online{
+    display: flex;
+    align-items: center;
+
+}
+
+.online::before{
+    content: '';
+    margin-right: 5px;
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background-image: url(../../svg/user.svg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+@media(max-width:782px){
+    .serverCard{
+        flex-grow: 1;
+    }
+}
+@media(min-width:783px) and (max-width:793px){
+    .serverCard:hover{
+        padding: 0px 0px;
+    }
+}

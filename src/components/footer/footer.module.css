@@ -1,0 +1,30 @@
+.footer{
+    margin-top:70px
+}
+.info{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap:10px
+   
+}
+
+.otherInfo{
+   
+    margin-top: 20px;
+}
+
+.otherInfoText{
+    color:var(--main-white);
+    font-size:14px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap:20px;
+}
+.otherInfoText li:last-child{
+    font-size: 18px;
+}
+

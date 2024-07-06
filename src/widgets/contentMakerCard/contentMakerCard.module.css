@@ -1,0 +1,74 @@
+.card{
+    
+    transition: 250ms;
+    width:clamp(310px,30vw,360px);
+    height: 190px;
+    border-radius: 10px;
+    background-color: var(--main-gray);
+}
+
+.link{
+    color:var(--main-white);
+}
+.logotype{
+    padding: 10px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.text{
+    padding: 10px 0px;
+    text-align: center;
+}
+
+.card:hover{
+    box-shadow:rgba(255,255,255,0.25) 0px 0px 25px 0px
+}
+
+
+
+.logotype.amserg::before{
+    content: '';
+    border-radius: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../img/amsergIcon.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logotype.eclipse::before{
+content: '';
+    border-radius: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../img/eclipseIcon.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.logotype.alexNotfril::before{
+content: '';
+    border-radius: 10px;
+    margin-right: 10px;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(../../img/alexNotfrilIcon.avif);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media(max-width:700px){
+    .card{
+        flex-grow: 1;
+    }
+}
