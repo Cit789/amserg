@@ -6,7 +6,26 @@
 
 .ul li a {
 	color: var(--main-white);
+	position: relative;
 }
+.ul li a::after{
+	content: '';
+	transition: 250ms;
+	bottom: 0;
+	left:0;
+	display: inline-block;
+	width:0%;
+	background-color: var(--main-white);
+	height: 1px;
+	position: absolute;
+}
+
+.ul li:hover a::after{
+	width: 150%;
+	
+}
+
+
 .ul li {
 	margin-top: 10px;
 }

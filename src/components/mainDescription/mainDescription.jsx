@@ -7,11 +7,25 @@ import cart from '../../svg/cart.svg'
 import server from '../../svg/server.svg'
 import StatButton from '../../widgets/statButton/statButton'
 import user from '../../svg/user.svg'
+import { useEffect, useRef } from 'react'
 export default function MainDescription() {
 	const discord_url = 'https://discord.com/invite/amserg-games'
 	const youtube_url = 'https://www.youtube.com/@AmSerg'
+	const backImageRef = useRef()
+
+	useEffect(() => {
+		window.addEventListener('scroll', onScroll)
+		function onScroll(e) {
+			if (backImageRef.current) {
+				const el = backImageRef.current
+				el.style.backgroundPositionY = `${window.scrollY * 0.3 - 100}px`
+			}
+		}
+		return () => window.removeEventListener('scroll', onScroll)
+	}, [])
+
 	return (
-		<div className={cl.mainContainer}>
+		<div className={cl.mainContainer} id='toUp' ref={backImageRef}>
 			<div className={cl.descriptionContainer}>
 				<LogotypeMain text='AMSERG GAMES' />
 				<div>

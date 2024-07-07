@@ -21,3 +21,9 @@
     
 }
 
+@media(max-width:900px){
+    .YellowBtn{
+        width:100%;
+        
+    }
+}

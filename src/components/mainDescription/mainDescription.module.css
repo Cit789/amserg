@@ -3,8 +3,8 @@
 	width: 100%;
 	height: 850px;
 	background-image: url(../../img/mainDescription.avif);
-	background-position: 0;
 	background-repeat: no-repeat;
+	background-position-y: -100px;
 	background-size: cover;
 	box-shadow: 0 -23px 56px 500px rgba(26, 26, 26, 0.4) inset;
 	border-radius: 10px;
